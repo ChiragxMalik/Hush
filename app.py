@@ -139,5 +139,4 @@ if user_input:
 
 # ---- Footer ----
 st.markdown("<hr>")
-st.markdown(f"<small>Session ID: `{st.session_state.session_id}`</small>")
 st.markdown("<small>HeartHush provides emotional support but is not a replacement for professional therapy.</small>")
