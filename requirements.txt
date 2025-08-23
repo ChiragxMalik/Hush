@@ -1,0 +1,8 @@
+python-dotenv
+groq
+langchain
+langchain-huggingface
+langchain-community
+streamlit
+PyMuPDF
+docx2txt
