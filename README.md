@@ -38,7 +38,7 @@ It combines **Retrieval-Augmented Generation (RAG)** with trusted resources like
 1. **Clone repo**
 
    ```bash
-   git clone https://github.com/yourusername/hearthush.git
+   git clone https://github.com/chiragxmalik/hush.git
    cd hush
    ```
 
