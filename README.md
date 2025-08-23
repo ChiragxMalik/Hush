@@ -1,7 +1,3 @@
-Got it 👍 — here’s a clean **README.md draft** for your project. You can add your screenshot(s) under the “Demo” section once you upload them to your repo.
-
----
-
 # ❤️ HeartHush – AI Mental Health Chatbot
 
 HeartHush (**Hush**) is a therapeutic chatbot that adapts to your emotional state and provides supportive, evidence-based responses.
