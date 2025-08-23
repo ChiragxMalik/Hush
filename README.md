@@ -89,15 +89,6 @@ HeartHush’s RAG pipeline is built on well-respected psychology resources, incl
 
 ---
 
-## 🚀 Roadmap
-
-* [ ] Multi-session memory persistence
-* [ ] Voice input/output mode
-* [ ] Mobile-friendly deployment
-* [ ] More therapy frameworks (ACT, positive psychology)
-
----
-
 ## ⚠️ Disclaimer
 
 HeartHush is **not a substitute for professional help**.
