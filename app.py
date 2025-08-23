@@ -5,14 +5,14 @@ from rag import get_response, test_vector_db  # Import RAG logic and test functi
 
 # ---- Helper Functions ----
 def get_initial_message(mode):
-    """Return mode-appropriate initial message"""
     messages = {
-        "Calm": "Hello! I can sense you're in a peaceful space right now. I'm Hush, and I'm here to support your continued growth and reflection. What's on your mind today?",
-        "Anxious": "Hi there. I understand you might be feeling anxious right now, and that's completely okay. I'm Hush, and I'm here to help you find some grounding and peace. You're safe here. What's been weighing on you?",
-        "Low Mood": "Hello. I can see you're going through a difficult time, and I want you to know that reaching out takes real strength. I'm Hush, and I'm here to walk alongside you. You don't have to carry this alone. What's been on your heart?",
-        "Panic": "Hey, I'm right here with you. If you're feeling panicked, know that you're safe in this moment. I'm Hush, and I'm here to help you through this. Let's take this one breath at a time. What's happening for you right now?"
+        "Calm": "Hello! I sense you're in a peaceful space. I'm Hush, here to support your reflections and growth. What would you like to share today?",
+        "Anxious": "Hi there. It sounds like you may be feeling anxious, and that's completely okay. You're safe here — would you like to talk about what's been on your mind?",
+        "Low Mood": "Hello. I know things might feel heavy right now, and reaching out shows real strength. I'm here with you — what's been weighing on your heart?",
+        "Panic": "Hey, I'm right here with you. If panic feels overwhelming, know that you're safe in this moment. Let's take it one breath at a time — what’s happening for you right now?"
     }
     return messages.get(mode, messages["Calm"])
+
 
 # ---- Enhanced Modes with Better Descriptions ----
 MODES = {
@@ -56,11 +56,11 @@ if "db_status" not in st.session_state:
 # ---- Header ----
 st.set_page_config(
     page_title="HeartHush - AI Companion", 
-    page_icon="💙",
+    page_icon="❤️",
     layout="wide"
 )
 
-st.title("💙 HeartHush - Your Empathetic AI Companion")
+st.title("❤️HeartHush - Your Empathetic AI Companion")
 
 # ---- Database Status Indicator ----
 if st.session_state.db_status:
@@ -200,9 +200,9 @@ with st.form(key="chat_form", clear_on_submit=True):
     
     col1, col2, col3 = st.columns([3, 1, 1])
     with col2:
-        submit_button = st.form_submit_button("💬 Send", use_container_width=True)
+        submit_button = st.form_submit_button("Send", use_container_width=True)
     with col3:
-        clear_button = st.form_submit_button("🗑️ Clear Chat", use_container_width=True)
+        clear_button = st.form_submit_button("Clear Chat", use_container_width=True)
 
 # ---- Response Handler ----
 if submit_button and user_input.strip():
@@ -230,20 +230,20 @@ if clear_button:
 # ---- Sidebar with App Info ----
 with st.sidebar:
     st.markdown("### About HeartHush")
-    st.markdown("HeartHush adapts its responses based on your current emotional state, providing personalized therapeutic support.")
+    st.markdown("Your AI powered mental wellness companion. HeartHush adapts to your emotional state, offering gentle, personalized support.")
     
     st.markdown("### Current Session")
     st.markdown(f"**Mode:** {st.session_state.mode}")
     st.markdown(f"**Messages:** {len(st.session_state.chat_history)}")
     st.markdown(f"**Session ID:** `{st.session_state.session_id[:8]}...`")
     
-    st.markdown("### Therapeutic Approaches")
+    st.markdown("### HeartHush draws from proven approaches:")
     st.markdown("- Trauma-informed care")
     st.markdown("- Cognitive Behavioral Therapy (CBT)")
     st.markdown("- Dialectical Behavior Therapy (DBT)")
     st.markdown("- Mindfulness practices")
     
-    if st.button("🔄 Reset Session", use_container_width=True):
+    if st.button("Reset Session", use_container_width=True):
         st.session_state.chat_history = []
         st.session_state.session_id = str(uuid.uuid4())
         st.rerun()
