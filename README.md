@@ -2,7 +2,7 @@ Got it 👍 — here’s a clean **README.md draft** for your project. You can a
 
 ---
 
-# 🫀 HeartHush – AI Mental Health Chatbot
+# ❤️ HeartHush – AI Mental Health Chatbot
 
 HeartHush (**Hush**) is a therapeutic chatbot that adapts to your emotional state and provides supportive, evidence-based responses.
 It combines **Retrieval-Augmented Generation (RAG)** with trusted resources like *Feeling Good*, *Cognitive Behavior Therapy: Basics and Beyond*, and *The Body Keeps the Score* to ground its replies in well-established therapeutic methods.
@@ -43,7 +43,7 @@ It combines **Retrieval-Augmented Generation (RAG)** with trusted resources like
 
    ```bash
    git clone https://github.com/yourusername/hearthush.git
-   cd hearthush
+   cd hush
    ```
 
 2. **Install dependencies**
