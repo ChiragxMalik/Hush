@@ -102,7 +102,3 @@ HeartHush’s RAG pipeline is built on well-respected psychology resources, incl
 
 HeartHush is **not a substitute for professional help**.
 If you are in crisis or need urgent support, please contact your local emergency number or mental health hotline.
-
----
-
-👉 Do you also want me to add a **Usage Examples section** (like showing how the *same question* produces 4 different mode responses)? That would make your demo really stand out.
